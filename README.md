@@ -1,2 +1,2 @@
 # HP_VEE
-# Hewlett Packard VEE graphical dataflow for computation of the eye diagram and statistical analysis
+# Hewlett Packard VEE graphical dataflow for statistical evaluation of tranmission channel quality
