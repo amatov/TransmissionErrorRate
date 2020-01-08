@@ -1,0 +1,1143 @@
+(saveFormat "2.3")
+(date "Tue 26/Sep/2000 16:59:15 ")
+(veerev "5.0")
+(platform "PC")
+(execMode fast)
+(filterNAN 0)
+(workspaceStackingOrder M)
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(properties
+(trigMode rad)
+(nextID 158)
+(popupTitleText " Error Probability")
+(popupMoveable 1)
+(popupTitleTextColor "Black")
+(popupTitleBackgroundColor "Gray")
+(deleteGlobals 0))
+(deviceList
+(device 79 FROMFILE
+(properties
+(name "Histogram")
+(transactions 2 "READ CONTAINER X" "READ CONTAINER Y"))
+(interface
+(output 1
+(name "X")
+(optional yes))
+(output 2
+(name "Y")
+(optional yes)))
+(implementation
+(attr iopath file read "D:\\HP VEE\\Histo.dat"
+(readTerm "\n")
+(fs " ")
+(eol "\n")
+(multiField fullSyntax)
+(arrayFormat block))))
+(device 80 XYPLOT
+(properties
+(name "3D Eye Diagram (Histogram)"))
+(interface
+(input 1
+(name "XData")
+(lock constraints))
+(input 2
+(name "YData1")
+(lock constraints))
+(input 3
+(type control)
+(name "Next Curve")
+(lock name constraints)
+(optional yes)))
+(implementation
+(tracePin 2)
+(graphMode rectangular)))
+(device 84 START25)
+(device 85 XYPLOT
+(properties
+(name "Error Probability  (Lin & Log scale)"))
+(interface
+(input 1
+(name "s")
+(lock constraints))
+(input 2
+(name "P(E)")
+(lock constraints))
+(input 3
+(name "log P(E)")
+(lock constraints)
+(optional yes))
+(input 4
+(type control)
+(name "Next Curve")
+(lock name constraints)
+(optional yes)))
+(implementation
+(tracePin 2)
+(tracePin 3)
+(graphMode rectangular)))
+(device 88 FROMFILE
+(properties
+(name "Probability")
+(transactions 3 "READ CONTAINER X" "READ CONTAINER Y" "READ CONTAINER Z"))
+(interface
+(output 1
+(name "X")
+(optional yes))
+(output 2
+(name "Y")
+(optional yes))
+(output 3
+(name "Z")
+(optional yes)))
+(implementation
+(attr iopath file read "D:\\HP VEE\\Probabil.dat"
+(readTerm "\n")
+(fs " ")
+(eol "\n")
+(multiField fullSyntax)
+(arrayFormat block))))
+(device 89 XYPLOT
+(properties
+(name "Eye closure (Upper & Lower)"))
+(interface
+(input 1
+(name "time")
+(lock constraints))
+(input 2
+(name "Low_ec")
+(lock constraints))
+(input 3
+(name "Upp_ec")
+(lock constraints)
+(optional yes)))
+(implementation
+(tracePin 2)
+(tracePin 3)
+(graphMode rectangular)))
+(device 90 FROMFILE
+(properties
+(name "Closure")
+(transactions 3 "READ CONTAINER X" "READ CONTAINER Y" "READ CONTAINER Z"))
+(interface
+(output 1
+(name "X")
+(optional yes))
+(output 2
+(name "Y")
+(optional yes))
+(output 3
+(name "Z")
+(optional yes)))
+(implementation
+(attr iopath file read "D:\\HP VEE\\Closure.dat"
+(readTerm "\n")
+(fs " ")
+(eol "\n")
+(multiField fullSyntax)
+(arrayFormat block))))
+(device 93 FORMULA
+(properties
+(name "V_shift")
+(expr 1 "A+1.75"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 94 LABEL
+(properties
+(name "  Histogram")
+(labelValue "  Histogram"))
+(implementation))
+(device 95 LABEL
+(properties
+(name "P(E)")
+(labelValue "P(E)"))
+(implementation))
+(device 96 LABEL
+(properties
+(name "log P(E)")
+(labelValue "log P(E)"))
+(implementation))
+(device 97 LABEL
+(properties
+(name "Eye closure")
+(labelValue "Eye closure"))
+(implementation))
+(device 99 LABEL
+(properties
+(name "P(E)=P(0)Q(1/C0)+P(1)Q(1/C1)")
+(labelValue "P(E)=P(0)Q(1/C0)+P(1)Q(1/C1)"))
+(implementation))
+(device 100 LABEL
+(properties
+(name "Lower eye closure: C0 = s0/(u - m0) ")
+(labelValue "Lower eye closure: C0 = s0/(u - m0) "))
+(implementation))
+(device 103 FORCOUNT
+(properties
+(count 70))
+(interface
+(output 1
+(name "Count")
+(lock name constraints))))
+(device 104 FORCOUNT
+(properties
+(count 70))
+(interface
+(output 1
+(name "Count")
+(lock name constraints))))
+(device 105 FORCOUNT
+(properties
+(count 70))
+(interface
+(output 1
+(name "Count")
+(lock name constraints))))
+(device 106 NOTE
+(properties
+(name "Sampling")
+(text2 1 "22 ns<t<29 ns step 0.1 ns")))
+(device 107 NOTE
+(properties
+(name "Data Files")
+(text2 3 "My Documents\\VEE_3_Programs\\Error\\Histo.dat"
+"My Documents\\VEE_3_Programs\\Error\\Probabil.dat"
+"My Documents\\VEE_3_Programs\\Error\\Closure.dat")))
+(device 114 TEXTDISPLAY
+(properties
+(name "C1"))
+(interface
+(input 1
+(name "Data"))))
+(device 115 TEXTDISPLAY
+(properties
+(name "C0"))
+(interface
+(input 1
+(name "Data"))))
+(device 126 SLIDINGWINDOW
+(properties
+(name "C1[ I ]")
+(vecSize 70)
+(triggerSize 70))
+(interface
+(input 1
+(name "Data")
+(tag "Data")
+(requires
+(shape "Scalar"))
+(lock constraints))
+(output 1
+(name "Array")
+(tag "Array"))))
+(device 127 SLIDINGWINDOW
+(properties
+(name "C0[ I ]")
+(vecSize 70)
+(triggerSize 70))
+(interface
+(input 1
+(name "Data")
+(tag "Data")
+(requires
+(shape "Scalar"))
+(lock constraints))
+(output 1
+(name "Array")
+(tag "Array"))))
+(device 128 FORMULA
+(properties
+(name "min(x)")
+(expr 1 "min(x)"))
+(interface
+(input 1
+(name "X")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 129 FORMULA
+(properties
+(name "min(x)")
+(expr 1 "min(x)"))
+(interface
+(input 1
+(name "X")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 150 CONTEXT
+(properties
+(name "P(E)")
+(trigMode rad)
+(nextID 7)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "C0")
+(optional yes))
+(input 2
+(name "C1")
+(optional yes))
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 1 FORMULA
+(properties
+(name "erfc(x)")
+(expr 1 "0.5*(erfc(1/C0)+erfc(1/C1))"))
+(interface
+(input 1
+(name "C0")
+(optional yes))
+(input 2
+(name "C1")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 2 IFTHENELSE
+(properties
+(cases 1 "P<10^(-12)"))
+(interface
+(input 1
+(name "P")
+(optional yes))
+(output 1
+(name "Then")
+(lock name constraints))
+(output 2
+(name "Else")
+(lock name constraints))))
+(device 3 LITERALCONSTANT
+(properties
+(name "Text"))
+(interface
+(output 1
+(name "Text")
+(lock name constraints)))
+(implementation
+(value Text
+(data  "min P(E)<1*E-12"))
+(initValue Text
+(data  ""))))
+(device 4 GATE
+(interface
+(input 1
+(name "A")
+(tag "InData"))
+(output 1
+(name "X"))))
+(device 5 GATE
+(interface
+(input 1
+(name "A")
+(tag "InData"))
+(output 1
+(name "X"))))
+(device 6 JUNCTION
+(properties
+(name "JCT"))
+(interface
+(input 1
+(name "A"))
+(input 2
+(name "B"))
+(output 1
+(name "Data"))))
+(configuration
+(connect I1:1 D0:1)
+(connect I2:1 D0:2)
+(connect D0:1 D1:1)
+(connect D1:1 D3:0)
+(connect D2:1 D3:1)
+(connect D1:2 D4:0)
+(connect D0:1 D4:1)
+(connect D3:1 D5:1)
+(connect D4:1 D5:2)
+(connect D5:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 441 224)
+(anchorPt -1 -1)
+(configuration
+(devCarrierFor 1
+(active icon)
+(icon
+(extent 44 25))
+(open
+(extent 205 42))
+(terminals on)
+(pinCenter 60 110))
+(devCarrierFor 2
+(active icon)
+(icon
+(extent 82 25))
+(open
+(extent 136 53))
+(terminals on)
+(pinCenter 170 110))
+(devCarrierFor 3
+(active icon)
+(icon
+(extent 31 16))
+(open
+(extent 194 30))
+(pinCenter 170 150))
+(devCarrierFor 4
+(active icon)
+(icon
+(extent 35 16))
+(open)
+(terminals on)
+(pinCenter 320 150))
+(devCarrierFor 5
+(active icon)
+(icon
+(extent 35 16))
+(open)
+(terminals on)
+(pinCenter 320 190))
+(devCarrierFor 6
+(active icon)
+(icon
+(extent 29 25))
+(open)
+(terminals on)
+(pinCenter 380 170))
+(connect I1:1 D0:1
+(points 4 1 52 10 52 10 100 35 100))
+(connect I2:1 D0:2
+(points 4 1 172 10 172 10 120 35 120))
+(connect D0:1 D1:1
+(points 2 84 110 126 110))
+(connect D1:1 D3:0
+(points 3 213 100 320 100 320 139))
+(connect D2:1 D3:1
+(points 2 188 150 300 150))
+(connect D1:2 D4:0
+(points 5 213 120 230 120 230 170 320 170 320 179))
+(connect D0:1 D4:1
+(points 4 84 110 110 110 110 190 300 190))
+(connect D3:1 D5:1
+(points 4 340 150 350 150 350 160 363 160))
+(connect D4:1 D5:2
+(points 4 340 190 350 190 350 180 363 180))
+(connect D5:1 O1:1
+(points 4 397 170 420 170 420 112 441 112)))
+(stackingOrder 0 4 3 5 1 2))))
+(device 151 TEXTDISPLAY
+(properties
+(name "min P(E)"))
+(interface
+(input 1
+(name "Data"))))
+(device 152 LABEL
+(properties
+(name "Error Probability Estimation")
+(labelValue "Error Probability Estimation"))
+(implementation))
+(device 153 LABEL
+(properties
+(name "Upper eye closure:  C1 = s1/(m1 - u)")
+(labelValue "Upper eye closure:  C1 = s1/(m1 - u)"))
+(implementation))
+(device 155 LABEL
+(properties
+(name "lower")
+(labelValue "lower"))
+(implementation))
+(device 156 LABEL
+(properties
+(name "upper")
+(labelValue "upper"))
+(implementation))
+(device 157 DELAY
+(properties
+(delay 0))
+(interface
+(output 1
+(name "Done"))))
+(configuration
+(connect D16:1 D0:0)
+(connect D0:1 D1:1)
+(connect D0:2 D1:2)
+(connect D16:1 D1:3)
+(connect D4:1 D3:1)
+(connect D7:1 D3:2)
+(connect D4:3 D3:3)
+(connect D15:1 D3:4)
+(connect D15:1 D4:0)
+(connect D6:1 D5:1)
+(connect D6:2 D5:2)
+(connect D6:3 D5:3)
+(connect D14:1 D6:0)
+(connect D4:2 D7:1)
+(connect D15:0 D14:0)
+(connect D16:0 D15:0)
+(connect D2:0 D16:0)
+(connect D23:1 D19:1)
+(connect D24:1 D20:1)
+(connect D6:2 D21:1)
+(connect D6:3 D22:1)
+(connect D22:1 D23:1)
+(connect D21:1 D24:1)
+(connect D23:1 D25:1)
+(connect D24:1 D25:2)
+(connect D25:1 D26:1)
+(connect D16:1 D31:0))
+(ShowOnExecPanel))
+(contextCarrier
+(wndOrigin 2 2)
+(wndState res)
+(active panel)
+(panel
+(extent 800 534)
+(widget 10 detail
+(relativeOrigin 30 620)
+(bg "Black")
+(fg "Cyan")
+(font "Arial" 16 bold italic)
+(title off)
+(borderStyle none)
+(extent 90 30)
+(just l))
+(widget 26 detail
+(relativeOrigin 480 180)
+(fg "Red")
+(title on)
+(titleFg "Blue")
+(titleFont "Arial" 16 bold italic)
+(borderStyle flat)
+(extent 316 26)
+(scFont "Arial" 18)
+(arFont "Arial" 16))
+(widget 1 detail
+(relativeOrigin 0 0)
+(title on)
+(titleBg "Blue")
+(borderStyle none)
+(extent 480 212)
+(displayMode 0)
+(graphType cartesian)
+(gridType off)
+(scale 0
+(name "Y name")
+(domainName "X name")
+(Yspacing 10000)
+(Xspacing 10000)
+(pen 9)
+(show 1)
+(range -8 135 4 linear))
+(domain -40 440 4 linear)
+(trace 0 onScale 0
+(name "YData1")
+(pen 3)
+(lineType 1)
+(pointType 0)))
+(widget 8 detail
+(relativeOrigin 10 40)
+(bg "Black")
+(fg "Green")
+(font "Arial" 16 bold italic)
+(title off)
+(borderStyle none)
+(extent 96 28)
+(just c))
+(widget 13 detail
+(relativeOrigin 480 60)
+(bg "Light Blue Gray")
+(fg "Green")
+(font "Arial" 16 bold italic)
+(title off)
+(borderStyle none)
+(extent 320 30)
+(just c))
+(widget 27 detail
+(relativeOrigin 480 0)
+(bg "Light Blue Gray")
+(fg "Red")
+(font "Arial" 18 bold italic)
+(title off)
+(borderStyle convex)
+(extent 316 26)
+(just c))
+(widget 5 detail
+(relativeOrigin 480 230)
+(bg "Blue")
+(title on)
+(titleBg "Blue")
+(borderStyle flat)
+(extent 316 278)
+(displayMode 0)
+(graphType cartesian)
+(gridType off)
+(scale 0
+(name "Eye_closure")
+(domainName "time")
+(Yspacing 10000)
+(Xspacing 10000)
+(pen 9)
+(show 1)
+(range -0.2 1.6 4 linear))
+(domain 2.1E-008 3E-008 4 linear)
+(trace 0 onScale 0
+(name "Low_ec")
+(pen 3)
+(lineType 1)
+(pointType 0))
+(trace 1 onScale 0
+(name "Upp_ec")
+(pen 4)
+(lineType 1)
+(pointType 0))
+(markerInterpolate 1))
+(widget 11 detail
+(relativeOrigin 490 260)
+(bg "Black")
+(fg "White")
+(font "Arial" 16 bold italic)
+(title off)
+(borderStyle none)
+(extent 120 30)
+(just c))
+(widget 12 detail
+(relativeOrigin 480 140)
+(bg "Pale Blue")
+(fg "Red")
+(font "Arial" 20 bold italic)
+(title off)
+(borderStyle flat)
+(extent 316 36)
+(just c))
+(widget 28 detail
+(relativeOrigin 480 30)
+(bg "Light Blue Gray")
+(fg "Yellow")
+(font "Arial" 16 bold italic)
+(title off)
+(borderStyle none)
+(extent 320 30)
+(just c))
+(widget 3 detail
+(relativeOrigin 0 230)
+(bg "Blue")
+(title on)
+(titleBg "Blue")
+(borderStyle none)
+(extent 480 282)
+(displayMode 0)
+(graphType cartesian)
+(gridType off)
+(scale 0
+(name "Y name")
+(domainName "X name")
+(Yspacing 10000)
+(Xspacing 10000)
+(pen 9)
+(show 1)
+(range -3 6 4 linear))
+(domain -0.3 0.44 4 linear)
+(trace 0 onScale 0
+(name "P(E)")
+(pen 4)
+(lineType 1)
+(pointType 0))
+(trace 1 onScale 0
+(name "log P(E)")
+(pen 7)
+(lineType 1)
+(pointType 0))
+(markerInterpolate 1))
+(widget 10 detail
+(relativeOrigin 10 380)
+(bg "Black")
+(fg "Cyan")
+(font "Arial" 16 bold italic)
+(title off)
+(borderStyle none)
+(extent 70 28)
+(just c))
+(widget 9 detail
+(relativeOrigin 10 270)
+(bg "Black")
+(fg "Yellow")
+(font "Arial" 16 bold italic)
+(title off)
+(borderStyle none)
+(extent 80 30)
+(just c))
+(widget 29 detail
+(relativeOrigin 550 330)
+(bg "Black")
+(fg "Green")
+(font "Arial" 14 italic)
+(title off)
+(borderStyle none)
+(extent 43 26)
+(just c))
+(widget 30 detail
+(relativeOrigin 700 440)
+(bg "Black")
+(fg "Yellow")
+(font "Arial" 14 italic)
+(title off)
+(borderStyle none)
+(extent 47 26)
+(just c))
+(widget 19 detail
+(relativeOrigin 480 90)
+(fg "Yellow")
+(title on)
+(titleFg "Yellow")
+(titleFont "Arial" 14 bold italic)
+(borderStyle flat)
+(extent 166 28))
+(widget 20 detail
+(relativeOrigin 650 90)
+(fg "Green")
+(title on)
+(titleFg "Green")
+(titleFont "Arial" 14 bold italic)
+(borderStyle flat)
+(extent 146 28)))
+(detail
+(extent 800 534)
+(anchorPt 212 76)
+(configuration
+(devCarrierFor 79
+(active icon)
+(icon
+(extent 110 25))
+(open
+(extent 322 148))
+(terminals on)
+(pinCenter 0 -40))
+(devCarrierFor 80
+(active icon)
+(icon
+(extent 281 76)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\display.icn"))
+(open
+(extent 489 348)
+(displayMode scrollGraph)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "Y name")
+(domainName "X name")
+(pen 9)
+(show 1)
+(range 0 140 4 linear))
+(domain 0 500 4 linear)
+(trace 0 onScale 0
+(name "YData1")
+(pen 4)
+(lineType 1)
+(pointType 0)))
+(terminals on)
+(pinCenter 370 -40))
+(devCarrierFor 84
+(active open)
+(icon
+(extent 42 15))
+(open
+(extent 67 37))
+(title off)
+(pinCenter -190 -60))
+(devCarrierFor 85
+(active icon)
+(icon
+(extent 281 132))
+(open
+(extent 488 486)
+(displayMode annotGraph)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "Y name")
+(domainName "X name")
+(pen 9)
+(show 1)
+(range -3 5 4 linear))
+(domain -0.3 0.4 4 linear)
+(trace 0 onScale 0
+(name "P(E)")
+(pen 4)
+(lineType 1)
+(pointType 0))
+(trace 1 onScale 0
+(name "log P(E)")
+(pen 7)
+(lineType 1)
+(pointType 0))
+(marker 0 onTrace 1)
+(marker 1 onTrace 0)
+(markerInterpolate 1))
+(terminals on)
+(pinCenter 370 70))
+(devCarrierFor 88
+(active icon)
+(icon
+(extent 118 95))
+(open
+(extent 495 155))
+(terminals on)
+(pinCenter 0 50))
+(devCarrierFor 89
+(active icon)
+(icon
+(extent 278 103))
+(open
+(extent 317 281)
+(displayMode scrollGraph)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "Eye_closure")
+(domainName "time")
+(pen 9)
+(show 1)
+(range 0 1.6 4 linear))
+(domain 2.1E-008 3E-008 4 linear)
+(trace 0 onScale 0
+(name "Low_ec")
+(pen 4)
+(lineType 1)
+(pointType 0))
+(trace 1 onScale 0
+(name "Upp_ec")
+(pen 7)
+(lineType 1)
+(pointType 0)))
+(terminals on)
+(pinCenter 370 200))
+(devCarrierFor 90
+(active icon)
+(icon
+(extent 113 111))
+(open
+(extent 445 157))
+(terminals on)
+(pinCenter 0 200))
+(devCarrierFor 93
+(active icon)
+(icon
+(extent 47 16))
+(open
+(extent 88 62))
+(terminals on)
+(pinCenter 160 50))
+(devCarrierFor 94
+(active open)
+(icon
+(extent 78 52)
+(pictureMode scaled)
+(iconImage "blank.gif"))
+(open
+(extent 112 35)
+(just c))
+(title off)
+(font "Arial" 16 bold italic)
+(titleFont "Arial" 14 bold italic)
+(pinCenter 370 -50))
+(devCarrierFor 95
+(active open)
+(icon
+(extent 32 0))
+(open
+(extent 103 30)
+(just c))
+(title off)
+(bg "Black")
+(fg "Yellow")
+(font "Arial" 16 bold italic)
+(titleBg "Black")
+(titleFg "Yellow")
+(titleFont "Arial" 16 bold italic)
+(pinCenter 370 30))
+(devCarrierFor 96
+(active open)
+(icon
+(extent 56 0))
+(open
+(extent 102 33)
+(just c))
+(title off)
+(bg "Black")
+(fg "Blue")
+(font "Arial" 16 bold italic)
+(pinCenter 370 110))
+(devCarrierFor 97
+(active open)
+(icon
+(extent 81 0))
+(open
+(extent 110 32)
+(just c))
+(title off)
+(bg "Black")
+(fg "Magenta")
+(font "Arial" 16 bold italic)
+(pinCenter 370 230))
+(devCarrierFor 99
+(active icon)
+(icon
+(extent 282 26))
+(open
+(extent 273 32)
+(just c))
+(title off)
+(bg "Light Blue Gray")
+(titleFont "Arial" 16 bold italic)
+(pinCenter 0 410))
+(devCarrierFor 100
+(active open)
+(icon
+(extent 295 18))
+(open
+(extent 281 30)
+(just c))
+(title off)
+(bg "Light Blue Gray")
+(font "Arial" 16 bold italic)
+(titleFont "Arial" 16 bold italic)
+(pinCenter 0 360))
+(devCarrierFor 103
+(active icon)
+(icon
+(extent 70 52)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\loop.icn"))
+(open
+(extent 106 32))
+(pinCenter -190 230))
+(devCarrierFor 104
+(active icon)
+(icon
+(extent 70 52)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\loop.icn"))
+(open
+(extent 106 32))
+(pinCenter -190 120))
+(devCarrierFor 105
+(active icon)
+(icon
+(extent 70 52)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\loop.icn"))
+(open
+(extent 106 32))
+(pinCenter -190 20))
+(devCarrierFor 106
+(active icon)
+(icon
+(extent 68 52)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\notepad.icn"))
+(open
+(extent 246 45)
+(editing enabled))
+(pinCenter -190 320))
+(devCarrierFor 107
+(active icon)
+(icon
+(extent 70 52)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\info.gif"))
+(open
+(extent 411 86)
+(editing enabled))
+(pinCenter -190 390))
+(devCarrierFor 114
+(active icon)
+(icon
+(extent 24 16))
+(open
+(extent 131 28))
+(pinCenter 381 270))
+(devCarrierFor 115
+(active icon)
+(icon
+(extent 24 16))
+(open
+(extent 131 28))
+(pinCenter 381 350))
+(devCarrierFor 126
+(active icon)
+(icon
+(extent 41 16))
+(open
+(extent 160 57))
+(terminals on)
+(pinCenter 250 350))
+(devCarrierFor 127
+(active icon)
+(icon
+(extent 41 16))
+(open
+(extent 160 57))
+(terminals on)
+(pinCenter 250 270))
+(devCarrierFor 128
+(active icon)
+(icon
+(extent 42 16))
+(open
+(extent 72 32))
+(terminals on)
+(pinCenter 320 270))
+(devCarrierFor 129
+(active icon)
+(icon
+(extent 42 16))
+(open
+(extent 72 32))
+(terminals on)
+(pinCenter 320 350))
+(devCarrierFor 150
+(active icon)
+(icon
+(extent 32 25))
+(terminals on)
+(pinCenter 380 310))
+(devCarrierFor 151
+(active icon)
+(icon
+(extent 59 21))
+(open
+(extent 131 28))
+(pinCenter 440 310))
+(devCarrierFor 152
+(active open)
+(icon
+(extent 231 18))
+(open
+(extent 222 30)
+(just c))
+(title off)
+(bg "Light Blue Gray")
+(font "Arial" 16 bold italic)
+(titleFont "Arial" 16 bold italic)
+(pinCenter 370 410))
+(devCarrierFor 153
+(active open)
+(icon
+(extent 292 18))
+(open
+(extent 278 30)
+(just c))
+(title off)
+(bg "Light Blue Gray")
+(font "Arial" 16 bold italic)
+(titleFont "Arial" 16 bold italic)
+(pinCenter 0 310))
+(devCarrierFor 155
+(active open)
+(icon
+(extent 41 0))
+(open
+(extent 45 28)
+(just c))
+(title off)
+(bg "Black")
+(fg "Green")
+(font "Arial" 14 italic)
+(titleFont "Arial" 14 italic)
+(pinCenter 270 230))
+(devCarrierFor 156
+(active open)
+(icon
+(extent 37 0))
+(open
+(extent 49 28)
+(just c))
+(title off)
+(bg "Black")
+(fg "Blue")
+(font "Arial" 14 italic)
+(titleFont "Arial" 14 italic)
+(pinCenter 480 230))
+(devCarrierFor 157
+(active icon)
+(icon
+(extent 40 16))
+(open
+(extent 76 32))
+(pinCenter -110 80))
+(connect D16:1 D0:0
+(points 5 -153 20 -130 20 -130 -80 0 -80 0 -55))
+(connect D0:1 D1:1
+(points 4 57 -50 90 -50 90 -60 227 -60))
+(connect D0:2 D1:2
+(points 4 57 -30 90 -30 90 -40 227 -40))
+(connect D16:1 D1:3
+(points 6 -153 20 -130 20 -130 -80 80 -80 80 -20 227 -20))
+(connect D4:1 D3:1
+(points 2 61 20 227 20))
+(connect D7:1 D3:2
+(points 2 186 50 227 50))
+(connect D4:3 D3:3
+(points 2 61 80 227 80))
+(connect D15:1 D3:4
+(points 4 -153 120 80 120 80 110 227 110))
+(connect D15:1 D4:0
+(points 5 -153 120 80 120 80 -10 0 -10 0 0))
+(connect D6:1 D5:1
+(points 2 59 170 228 170))
+(connect D6:2 D5:2
+(points 2 59 200 228 200))
+(connect D6:3 D5:3
+(points 2 59 230 228 230))
+(connect D14:1 D6:0
+(points 5 -153 230 -130 230 -130 130 0 130 0 142))
+(connect D4:2 D7:1
+(points 2 61 50 134 50))
+(connect D15:0 D14:0
+(points 2 -190 148 -190 201))
+(connect D16:0 D15:0
+(points 2 -190 48 -190 91))
+(connect D2:0 D16:0
+(points 2 -190 -39 -190 -9))
+(connect D23:1 D19:1
+(points 2 343 270 366 270))
+(connect D24:1 D20:1
+(points 2 343 350 366 350))
+(connect D6:2 D21:1
+(points 4 59 200 160 200 160 350 227 350))
+(connect D6:3 D22:1
+(points 4 59 230 80 230 80 270 227 270))
+(connect D22:1 D23:1
+(points 2 273 270 296 270))
+(connect D21:1 D24:1
+(points 2 273 350 296 350))
+(connect D23:1 D25:1
+(points 4 343 270 350 270 350 300 361 300))
+(connect D24:1 D25:2
+(points 4 343 350 350 350 350 320 361 320))
+(connect D25:1 D26:1
+(points 2 398 310 408 310))
+(connect D16:1 D31:0
+(points 3 -153 20 -110 20 -110 69)))
+(stackingOrder 2 1 8 3 9 10 22 23 26 24 21 25 5 11 27 28 13 12 16 15 14 31 29 30
+19 20 7 0 18 17 4 6))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))

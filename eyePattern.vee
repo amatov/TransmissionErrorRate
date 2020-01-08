@@ -1,0 +1,555 @@
+(saveFormat "2.3")
+(date "Thu 25/Jan/2001 18:25:14 ")
+(veerev "5.0")
+(platform "PC")
+(execMode compat)
+(filterNAN 0)
+(workspaceStackingOrder M M.0 M.0.55)
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(properties
+(trigMode deg)
+(nextID 1)
+(popupTitleText "Untitled")
+(popupMoveable 1))
+(deviceList
+(device 0 CONTEXT
+(properties
+(name "eyePattern")
+(trigMode deg)
+(nextID 60))
+(interface
+(input 1
+(name "x")
+(requires
+(datatype Waveform))
+(optional yes)))
+(deviceList
+(device 55 CONTEXT
+(properties
+(name "process")
+(trigMode deg)
+(nextID 15))
+(interface
+(input 1
+(name "Wf ")
+(requires
+(datatype Waveform))
+(optional yes))
+(input 2
+(name "T")
+(optional yes))
+(input 3
+(name "Ny")
+(optional yes)))
+(deviceList
+(device 2 FORMULA
+(properties
+(name "nT")
+(expr 1 "a/b"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 3 FROMWAVEFORM
+(interface
+(input 1
+(name "Wf Data")
+(requires
+(datatype Waveform))
+(lock name constraints))
+(output 1
+(name "Real Ary")
+(lock name constraints))
+(output 2
+(name "Time Span")
+(lock name constraints))))
+(device 4 FORMULA
+(properties
+(name "totSize(x)")
+(expr 1 "totSize(x)"))
+(interface
+(input 1
+(name "X")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 5 FORMULA
+(properties
+(name "k")
+(expr 1 "a DIV b"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 6 FORMULA
+(properties
+(name "Ny*T")
+(expr 1 "A*B"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 7 FORMULA
+(properties
+(expr 1 "a[b*c:(B+D)*c-1]"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(input 3
+(name "C")
+(optional yes))
+(input 4
+(name "D")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 8 FORRANGE
+(properties
+(from 0)
+(thru 62)
+(step 2))
+(interface
+(input 1
+(name "Thru")
+(tag "Thru")
+(requires
+(datatype Real)
+(shape "Scalar"))
+(lock constraints)
+(optional yes)
+(buffer YES))
+(input 2
+(name "Step")
+(tag "Step")
+(requires
+(datatype Real)
+(shape "Scalar"))
+(lock constraints)
+(optional yes)
+(buffer YES))
+(output 1
+(name "Data")
+(lock name constraints))))
+(device 9 FORMULA
+(properties
+(name "a( a DIV b-1)")
+(expr 1 "B*(a DIV b-1)"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 10 YPLOT
+(properties
+(name "Waveform (Time)"))
+(interface
+(input 1
+(name "Trace1")
+(lock constraints))
+(input 2
+(type control)
+(name "Next Curve")
+(lock name constraints)
+(optional yes))
+(input 3
+(type control)
+(name "Auto Scale")
+(lock name constraints)
+(optional yes)))
+(implementation
+(tracePin 1)
+(graphMode time)))
+(device 11 TOWAVEFORM
+(interface
+(input 1
+(name "Array")
+(tag "Array")
+(requires
+(datatype Real))
+(lock name constraints))
+(input 2
+(name "Time Span")
+(tag "Time Span")
+(requires
+(datatype Real)
+(shape "Scalar"))
+(lock constraints)
+(optional yes)
+(buffer YES))
+(output 1
+(name "Waveform")
+(tag "Wf")
+(lock name constraints)))
+(implementation
+(interval 2E-010)))
+(configuration
+(connect D1:2 D0:1)
+(connect I2:1 D0:2)
+(connect I1:1 D1:1)
+(connect D1:1 D2:1)
+(connect D2:1 D3:1)
+(connect D0:1 D3:2)
+(connect I2:1 D4:1)
+(connect I3:1 D4:2)
+(connect D1:1 D5:1)
+(connect D6:1 D5:2)
+(connect D3:1 D5:3)
+(connect I3:1 D5:4)
+(connect D7:1 D6:1)
+(connect I3:1 D6:2)
+(connect D0:1 D7:1)
+(connect I3:1 D7:2)
+(connect D9:1 D8:1)
+(connect D6:1 D8:2)
+(connect D6:0 D8:3)
+(connect D5:1 D9:1)
+(connect D4:1 D9:2)))
+(contextCarrier
+(wndRestoredOrigin 42 42)
+(wndRestoredExtent 951 647)
+(wndState max)
+(active detail)
+(panel
+(extent 321 281)
+(widget 8 detail
+(relativeOrigin 0 0)
+(title off)
+(borderStyle flat)
+(extent 317 279)
+(displayMode 0)
+(graphType cartesian)
+(gridType axis)
+(scale 0
+(name "Mag")
+(domainName "Time")
+(Yspacing 10000)
+(Xspacing 10000)
+(pen 9)
+(show 1)
+(range -0.2 1.6 4 linear))
+(domain 0 2E-010 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(pen 4)
+(lineType 1)
+(pointType 0))))
+(detail
+(extent 1024 889)
+(anchorPt 297 454)
+(configuration
+(devCarrierFor 2
+(active icon)
+(icon
+(extent 24 25))
+(open
+(extent 79 104))
+(terminals on)
+(pinCenter 0 0))
+(devCarrierFor 3
+(active icon)
+(icon
+(extent 140 25))
+(open
+(extent 12 50))
+(terminals on)
+(pinCenter -100 -180))
+(devCarrierFor 4
+(active icon)
+(icon
+(extent 77 15))
+(open
+(extent 106 31))
+(terminals on)
+(pinCenter 50 -190))
+(devCarrierFor 5
+(active icon)
+(icon
+(extent 24 25))
+(open
+(extent 97 154))
+(terminals on)
+(pinCenter 90 -10))
+(devCarrierFor 6
+(active icon)
+(icon
+(extent 39 25))
+(open
+(extent 79 60))
+(terminals on)
+(pinCenter 210 80))
+(devCarrierFor 7
+(active icon)
+(icon
+(extent 64 45))
+(open
+(extent 178 154))
+(terminals on)
+(pinCenter 220 -20))
+(devCarrierFor 8
+(active icon)
+(icon
+(extent 110 64)
+(iconImage "loop.icn"))
+(open
+(extent 170 86))
+(pinCenter 240 -130))
+(devCarrierFor 9
+(active icon)
+(icon
+(extent 101 34))
+(open
+(extent 151 62))
+(terminals on)
+(pinCenter 230 -190))
+(devCarrierFor 10
+(active open)
+(icon
+(extent 145 64)
+(iconImage "display.icn"))
+(open
+(extent 317 279)
+(displayMode 63)
+(graphType cartesian)
+(gridType axis)
+(scale 0
+(name "Mag")
+(domainName "Time")
+(Yspacing 10000)
+(Xspacing 10000)
+(pen 9)
+(show 1)
+(range -0.2 1.6 4 linear))
+(domain 0 2E-010 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(pen 4)
+(lineType 1)
+(pointType 0)))
+(pinCenter 530 260))
+(devCarrierFor 11
+(active icon)
+(icon
+(extent 122 25))
+(open
+(extent 149 110))
+(terminals on)
+(pinCenter 480 -70))
+(connect D1:2 D0:1
+(points 4 -28 -170 -20 -170 -20 -10 -15 -10))
+(connect I2:1 D0:2
+(points 4 -297 -10 -200 -10 -200 10 -15 10))
+(connect I1:1 D1:1
+(points 4 -297 -300 -290 -300 -290 -180 -173 -180))
+(connect D1:1 D2:1
+(points 2 -28 -190 9 -190))
+(connect D2:1 D3:1
+(points 6 91 -190 110 -190 110 -160 70 -160 70 -20 75 -20))
+(connect D0:1 D3:2
+(points 2 14 0 75 0))
+(connect I2:1 D4:1
+(points 6 -297 -10 -200 -10 -200 10 -30 10 -30 70 188 70))
+(connect I3:1 D4:2
+(points 4 -297 280 -200 280 -200 90 188 90))
+(connect D1:1 D5:1
+(points 6 -28 -190 -10 -190 -10 -220 120 -220 120 -40 185 -40))
+(connect D6:1 D5:2
+(points 6 297 -130 310 -130 310 -80 170 -80 170 -30 185 -30))
+(connect D3:1 D5:3
+(points 4 104 -10 120 -10 120 -20 185 -20))
+(connect I3:1 D5:4
+(points 6 -297 280 -200 280 -200 90 160 90 160 -10 185 -10))
+(connect D7:1 D6:1
+(points 6 283 -190 300 -190 300 -230 150 -230 150 -150 182 -150))
+(connect I3:1 D6:2
+(points 6 -297 280 -200 280 -200 90 160 90 160 -110 182 -110))
+(connect D0:1 D7:1
+(points 6 14 0 30 0 30 -50 130 -50 130 -200 177 -200))
+(connect I3:1 D7:2
+(points 6 -297 280 -200 280 -200 90 160 90 160 -180 177 -180))
+(connect D9:1 D8:1
+(points 6 543 -70 560 -70 560 -30 350 -30 350 170 369 170))
+(connect D6:1 D8:2
+(points 6 297 -130 310 -130 310 -80 320 -80 320 260 369 260))
+(connect D6:0 D8:3
+(points 5 240 -96 240 -70 280 -70 280 350 369 350))
+(connect D5:1 D9:1
+(points 4 254 -20 330 -20 330 -80 416 -80))
+(connect D4:1 D9:2
+(points 4 232 80 270 80 270 -60 416 -60)))
+(stackingOrder 6 7 5 4 3 2 0 1 8 9))))
+(device 56 CONSTANT
+(properties
+(name "Bit duration [s]"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  1E-010))
+(initValue Real
+(data  0))))
+(device 57 CONSTANT
+(properties
+(name "Nr. of eyes"))
+(interface
+(output 1
+(name "Int32")
+(lock name constraints)))
+(implementation
+(value Int32
+(data  2))
+(initValue Int32
+(data  0))))
+(configuration
+(connect I1:1 D0:1)
+(connect D1:1 D0:2)
+(connect D2:1 D0:3)))
+(contextCarrier
+(wndOrigin 22 22)
+(wndState res)
+(active detail)
+(panel
+(extent 357 334)
+(widget 1 detail
+(relativeOrigin 160 280)
+(title on)
+(borderStyle flat)
+(extent 151 29)
+(showFormat real))
+(widget 2 detail
+(relativeOrigin 20 280)
+(title on)
+(borderStyle flat)
+(extent 117 29)
+(showFormat int))
+(widget 0 panel
+(relativeOrigin 0 0)
+(title off)
+(borderStyle flat)
+(extent 356 276)
+(widget 8 detail
+(relativeOrigin 0 0)
+(title off)
+(borderStyle flat)
+(extent 346 276)
+(displayMode 0)
+(graphType cartesian)
+(gridType axis)
+(scale 0
+(name "Mag")
+(domainName "Time")
+(Yspacing 10000)
+(Xspacing 10000)
+(pen 9)
+(show 1)
+(range -0.2 1.6 4 linear))
+(domain 0 2E-010 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(pen 4)
+(lineType 1)
+(pointType 0)))))
+(detail
+(extent 315 205)
+(anchorPt 367 172)
+(configuration
+(devCarrierFor 55
+(active icon)
+(icon
+(extent 57 34))
+(open
+(extent 321 281)
+(carbonCopy))
+(terminals on)
+(bg "Light Blue Gray")
+(pinCenter 0 0))
+(devCarrierFor 56
+(active icon)
+(icon
+(extent 115 15))
+(open
+(extent 151 29)
+(showFormat real))
+(pinCenter -240 -30))
+(devCarrierFor 57
+(active icon)
+(icon
+(extent 81 15))
+(open
+(extent 117 29)
+(showFormat int))
+(pinCenter -250 10))
+(connect I1:1 D0:1
+(points 6 -367 -70 -350 -70 -350 -60 -150 -60 -150 -10 -31 -10))
+(connect D1:1 D0:2
+(points 4 -180 -30 -160 -30 -160 0 -31 0))
+(connect D2:1 D0:3
+(points 2 -207 10 -31 10)))
+(stackingOrder 1 2 0))))
+(configuration))
+(contextCarrier
+(wndOrigin 2 2)
+(wndState res)
+(active detail)
+(detail
+(extent 600 350)
+(anchorPt 515 307)
+(configuration
+(devCarrierFor 0
+(active icon)
+(icon
+(extent 110 25))
+(open
+(extent 357 334)
+(carbonCopy))
+(terminals on)
+(bg "Light Blue Gray")
+(pinCenter 0 0))))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))
