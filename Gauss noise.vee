@@ -1,0 +1,2153 @@
+(saveFormat "2.3")
+(date "Tue 27/Feb/2001 18:27:44 ")
+(veerev "5.0")
+(platform "PC")
+(execMode ole)
+(filterNAN 0)
+(workspaceStackingOrder M)
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(properties
+(trigMode deg)
+(nextID 43)
+(popupTitleText "Untitled")
+(popupMoveable 1))
+(deviceList
+(device 17 CONTEXT
+(properties
+(name "Noise Gen")
+(trigMode deg)
+(nextID 14)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "S")
+(optional yes))
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 1 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 2 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 3 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 4 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 5 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 6 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 7 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 8 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 9 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 10 FORMULA
+(properties
+(name "sum")
+(expr 1 "A+B+C+D+E+F+G+H+I+J+K+L"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(input 3
+(name "C")
+(optional yes))
+(input 4
+(name "D")
+(optional yes))
+(input 5
+(name "E")
+(optional yes))
+(input 6
+(name "F")
+(optional yes))
+(input 7
+(name "G")
+(optional yes))
+(input 8
+(name "H")
+(optional yes))
+(input 9
+(name "I")
+(optional yes))
+(input 10
+(name "J")
+(optional yes))
+(input 11
+(name "K")
+(optional yes))
+(input 12
+(name "L")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 11 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 12 CONTEXT
+(properties
+(name "prng")
+(trigMode deg)
+(nextID 3)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Low limit = -.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -0.5))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "High limit =+.5"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.5))
+(initValue Real
+(data  0))))
+(device 2 FORMULA
+(properties
+(name "random(low,high)")
+(expr 1 "random(low, high)"))
+(interface
+(input 1
+(name "low")
+(optional yes))
+(input 2
+(name "high")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D2:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 507 265)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 83 0))
+(open
+(extent 119 29)
+(showFormat real))
+(pinCenter 120 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 86 0))
+(open
+(extent 122 29)
+(showFormat real))
+(pinCenter 120 190))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 106 0))
+(open
+(extent 128 42))
+(terminals on)
+(pinCenter 315 140))
+(connect D0:1 D2:1
+(points 4 182 100 190 100 190 130 208 130))
+(connect D1:1 D2:2
+(points 4 183 190 200 190 200 150 208 150))
+(connect D2:1 O1:1
+(points 4 431 140 450 140 450 132 506 132)))
+(stackingOrder 0 1 2))))
+(device 13 FORMULA
+(properties
+(name "A * B")
+(expr 1 "A*B"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:1 D10:1)
+(connect D3:1 D10:2)
+(connect D1:1 D10:3)
+(connect D2:1 D10:4)
+(connect D4:1 D10:5)
+(connect D5:1 D10:6)
+(connect D6:1 D10:7)
+(connect D7:1 D10:8)
+(connect D8:1 D10:9)
+(connect D9:1 D10:10)
+(connect D11:1 D10:11)
+(connect D12:1 D10:12)
+(connect D10:1 D13:1)
+(connect I1:1 D13:2)
+(connect D13:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 586 478)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 100 70))
+(devCarrierFor 1
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 100 130))
+(devCarrierFor 2
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 210 160))
+(devCarrierFor 3
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 210 100))
+(devCarrierFor 4
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 100 190))
+(devCarrierFor 5
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 210 220))
+(devCarrierFor 6
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 100 250))
+(devCarrierFor 7
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 210 280))
+(devCarrierFor 8
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 100 310))
+(devCarrierFor 9
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 210 340))
+(devCarrierFor 10
+(active icon)
+(icon
+(extent 29 125))
+(open
+(extent 137 379))
+(terminals on)
+(pinCenter 340 240))
+(devCarrierFor 11
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 100 370))
+(devCarrierFor 12
+(active icon)
+(icon
+(extent 78 18))
+(terminals on)
+(pinCenter 210 400))
+(devCarrierFor 13
+(active icon)
+(icon
+(extent 30 25))
+(open
+(extent 71 42))
+(terminals on)
+(pinCenter 470 250))
+(connect D0:1 D10:1
+(points 4 141 70 270 70 270 180 323 180))
+(connect D3:1 D10:2
+(points 4 251 100 260 100 260 190 323 190))
+(connect D1:1 D10:3
+(points 6 141 130 150 130 150 190 250 190 250 200 323 200))
+(connect D2:1 D10:4
+(points 4 251 160 280 160 280 210 323 210))
+(connect D4:1 D10:5
+(points 6 141 190 150 190 150 250 270 250 270 220 323 220))
+(connect D5:1 D10:6
+(points 4 251 220 260 220 260 230 323 230))
+(connect D6:1 D10:7
+(points 6 141 250 150 250 150 260 280 260 280 240 323 240))
+(connect D7:1 D10:8
+(points 4 251 280 290 280 290 250 323 250))
+(connect D8:1 D10:9
+(points 4 141 310 300 310 300 260 323 260))
+(connect D9:1 D10:10
+(points 4 251 340 310 340 310 270 323 270))
+(connect D11:1 D10:11
+(points 6 141 370 270 370 270 290 300 290 300 280 323 280))
+(connect D12:1 D10:12
+(points 6 251 400 320 400 320 300 310 300 310 290 323 290))
+(connect D10:1 D13:1
+(points 2 357 240 452 240))
+(connect I1:1 D13:2
+(points 6 0 238 10 238 10 430 380 430 380 260 452 260))
+(connect D13:1 O1:1
+(points 4 487 250 510 250 510 238 585 238)))
+(stackingOrder 0 1 2 3 4 5 6 7 8 9 10 11 12 13))))
+(device 18 CONSTANT
+(properties
+(name "Standard deviation"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  1))
+(initValue Real
+(data  0))))
+(device 20 XYPLOT
+(properties
+(name "n(t)"))
+(interface
+(input 1
+(name "XData")
+(lock constraints))
+(input 2
+(name "n(t)")
+(lock constraints)))
+(implementation
+(tracePin 2)
+(graphMode rectangular)))
+(device 21 START25)
+(device 22 COLLECTOR
+(interface
+(input 1
+(name "Data")
+(tag "Data"))
+(input 2
+(type trigger)
+(name "XEQ")
+(lock name constraints))
+(output 1
+(name "Array")
+(tag "Array"))))
+(device 23 FORMULA
+(properties
+(name "0<T<1")
+(expr 1 "ramp(1000, 0, 1)"))
+(interface
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 24 FORRANGE
+(properties
+(from 0)
+(thru 999)
+(step 1))
+(interface
+(output 1
+(name "Data")
+(lock name constraints))))
+(device 30 CONTEXT
+(properties
+(name "histogram")
+(trigMode deg)
+(nextID 13)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "x")
+(optional yes))
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes))
+(output 2
+(type data)
+(name "Y")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "from"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  -3))
+(initValue Real
+(data  0))))
+(device 1 CONSTANT
+(properties
+(name "thru"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  3))
+(initValue Real
+(data  0))))
+(device 2 CONSTANT
+(properties
+(name "step"))
+(interface
+(output 1
+(name "Real")
+(lock name constraints)))
+(implementation
+(value Real
+(data  0.1))
+(initValue Real
+(data  0))))
+(device 3 FORMULA
+(properties
+(name "magDist(x,from,thru,step)")
+(expr 1 "magDist(x, from, thru, step)"))
+(interface
+(input 1
+(name "x")
+(optional yes))
+(input 2
+(name "from")
+(optional yes))
+(input 3
+(name "thru")
+(optional yes))
+(input 4
+(name "step")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 4 FORMULA
+(properties
+(name "-3 < X > +3")
+(expr 1 "ramp(60,  -3, 3)"))
+(interface
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 9 FORMULA
+(properties
+(expr 1 "(A/B)"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 10 FORMULA
+(properties
+(name "sum(x)")
+(expr 1 "sum(x)"))
+(interface
+(input 1
+(name "x")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 11 FORMULA
+(properties
+(name "sum(x)")
+(expr 1 "sum(x)"))
+(interface
+(input 1
+(name "x")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 12 TEXTDISPLAY
+(interface
+(input 1
+(name "Data"))))
+(configuration
+(connect I1:1 D3:1)
+(connect D0:1 D3:2)
+(connect D1:1 D3:3)
+(connect D2:1 D3:4)
+(connect D3:1 D5:1)
+(connect D6:1 D5:2)
+(connect D3:1 D6:1)
+(connect D5:1 D7:1)
+(connect D7:1 D8:1)
+(connect D4:1 O1:1)
+(connect D5:1 O2:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 446 366)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 29 0))
+(open
+(extent 66 29)
+(showFormat real))
+(pinCenter 100 100))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 25 0))
+(open
+(extent 66 29)
+(showFormat real))
+(pinCenter 100 160))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 28 0))
+(open
+(extent 66 29)
+(showFormat real))
+(pinCenter 100 220))
+(devCarrierFor 3
+(active icon)
+(icon
+(extent 152 45))
+(open
+(extent 170 82))
+(terminals on)
+(pinCenter 280 100))
+(devCarrierFor 4
+(active icon)
+(icon
+(extent 149 36))
+(open
+(extent 114 38))
+(terminals on)
+(pinCenter 280 40))
+(devCarrierFor 9
+(active open)
+(icon)
+(open
+(extent 71 42))
+(terminals on)
+(pinCenter 290 250))
+(devCarrierFor 10
+(active icon)
+(icon
+(extent 42 15))
+(open
+(extent 71 32))
+(terminals on)
+(pinCenter 170 270))
+(devCarrierFor 11
+(active icon)
+(icon
+(extent 42 15))
+(open
+(extent 71 32))
+(terminals on)
+(pinCenter 180 320))
+(devCarrierFor 12
+(active open)
+(icon)
+(open
+(extent 121 22))
+(pinCenter 320 320))
+(connect I1:1 D3:1
+(points 6 0 182 10 182 10 50 160 50 160 80 201 80))
+(connect D0:1 D3:2
+(points 4 135 100 150 100 150 90 201 90))
+(connect D1:1 D3:3
+(points 4 135 160 150 160 150 100 201 100))
+(connect D2:1 D3:4
+(points 4 135 220 160 220 160 110 201 110))
+(connect D3:1 D5:1
+(points 6 358 100 380 100 380 150 200 150 200 240 222 240))
+(connect D6:1 D5:2
+(points 4 193 270 200 270 200 260 222 260))
+(connect D3:1 D6:1
+(points 10 358 100 380 100 380 150 200 150 200 240 160 240 160 250 140 250 140
+270 146 270))
+(connect D5:1 D7:1
+(points 6 378 250 400 250 400 350 140 350 140 320 156 320))
+(connect D7:1 D8:1
+(points 2 203 320 257 320))
+(connect D4:1 O1:1
+(points 4 357 40 380 40 380 92 445 92))
+(connect D5:1 O2:1
+(points 4 378 250 400 250 400 272 445 272)))
+(stackingOrder 0 1 2 3 5 6 7 8 4))))
+(device 32 XYPLOT
+(properties
+(name "histogram"))
+(interface
+(input 1
+(name "XData")
+(lock constraints))
+(input 2
+(name "")
+(lock constraints)))
+(implementation
+(tracePin 2)
+(graphMode rectangular)
+(autoAutoY)))
+(device 39 XYPLOT
+(properties
+(name "Gauss"))
+(interface
+(input 1
+(name "XData")
+(lock constraints))
+(input 2
+(name "experimental")
+(lock constraints))
+(input 3
+(name "theoretic (Gauss)")
+(lock constraints)
+(optional yes)))
+(implementation
+(tracePin 2)
+(tracePin 3)
+(graphMode rectangular)
+(autoAutoX)
+(autoAutoY)))
+(device 40 CONTEXT
+(properties
+(name "statistic")
+(trigMode deg)
+(nextID 9)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "x")
+(optional yes))
+(output 1
+(type data)
+(name "Result")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 FORMULA
+(properties
+(name "mean(x)")
+(expr 1 "mean(x)"))
+(interface
+(input 1
+(name "x")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 1 FORMULA
+(properties
+(name "sdev(x)")
+(expr 1 "sdev(x)"))
+(interface
+(input 1
+(name "x")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 2 FORMULA
+(properties
+(expr 1 "ramp(60,  -3, 3)"))
+(interface
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 3 TEXTDISPLAY
+(properties
+(name "mean"))
+(interface
+(input 1
+(name "Data"))))
+(device 4 TEXTDISPLAY
+(properties
+(name "standard deviation"))
+(interface
+(input 1
+(name "Data"))))
+(device 5 FORMULA
+(properties
+(name "Gauss function")
+(expr 2 "1/(S*sqrt(2*pi))*exp(-(((X-M)/S)^2)/2)" ""))
+(interface
+(input 1
+(name "X")
+(optional yes))
+(input 2
+(name "M")
+(optional yes))
+(input 3
+(name "S")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 6 FORMULA
+(properties
+(name "sum(x)")
+(expr 1 "sum(x)"))
+(interface
+(input 1
+(name "x")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 7 TEXTDISPLAY
+(interface
+(input 1
+(name "Data"))))
+(device 8 FORMULA
+(properties
+(expr 1 "A/B"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(input 2
+(name "B")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect I1:1 D0:1)
+(connect I1:1 D1:1)
+(connect D0:1 D3:1)
+(connect D1:1 D4:1)
+(connect D2:1 D5:1)
+(connect D0:1 D5:2)
+(connect D1:1 D5:3)
+(connect D5:1 D6:1)
+(connect D6:1 D7:1)
+(connect D5:1 D8:1)
+(connect D6:1 D8:2)
+(connect D8:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 628 282)
+(anchorPt 13 -3)
+(configuration
+(devCarrierFor 0
+(active icon)
+(icon
+(extent 49 15))
+(open
+(extent 76 32))
+(terminals on)
+(pinCenter 60 90))
+(devCarrierFor 1
+(active icon)
+(icon
+(extent 43 15))
+(open
+(extent 71 32))
+(terminals on)
+(pinCenter 60 190))
+(devCarrierFor 2
+(active icon)
+(icon
+(extent 94 17))
+(open
+(extent 114 38))
+(terminals on)
+(pinCenter 270 100))
+(devCarrierFor 3
+(active open)
+(icon
+(extent 36 0))
+(open
+(extent 144 20))
+(pinCenter 200 50))
+(devCarrierFor 4
+(active open)
+(icon
+(extent 111 0))
+(open
+(extent 147 22))
+(pinCenter 190 170))
+(devCarrierFor 5
+(active icon)
+(icon
+(extent 91 34))
+(open
+(extent 219 100))
+(terminals on)
+(pinCenter 420 90))
+(devCarrierFor 6
+(active icon)
+(icon
+(extent 42 15))
+(open
+(extent 71 32))
+(terminals on)
+(pinCenter 380 170))
+(devCarrierFor 7
+(active icon)
+(icon
+(extent 85 15))
+(open
+(extent 121 22))
+(pinCenter 480 220))
+(devCarrierFor 8
+(active icon)
+(icon
+(extent 50 25))
+(open
+(extent 71 42))
+(terminals on)
+(pinCenter 540 140))
+(connect I1:1 D0:1
+(points 4 -13 143 0 143 0 90 33 90))
+(connect I1:1 D1:1
+(points 4 -13 143 10 143 10 190 36 190))
+(connect D0:1 D3:1
+(points 4 87 90 110 90 110 50 125 50))
+(connect D1:1 D4:1
+(points 4 84 190 100 190 100 170 114 170))
+(connect D2:1 D5:1
+(points 4 319 100 330 100 330 80 372 80))
+(connect D0:1 D5:2
+(points 6 87 90 200 90 200 70 340 70 340 90 372 90))
+(connect D1:1 D5:3
+(points 6 84 190 100 190 100 200 340 200 340 100 372 100))
+(connect D5:1 D6:1
+(points 6 468 90 490 90 490 130 350 130 350 170 356 170))
+(connect D6:1 D7:1
+(points 4 403 170 420 170 420 220 435 220))
+(connect D5:1 D8:1
+(points 4 468 90 490 90 490 130 512 130))
+(connect D6:1 D8:2
+(points 4 403 170 420 170 420 150 512 150))
+(connect D8:1 O1:1
+(points 4 567 140 590 140 590 143 614 143)))
+(stackingOrder 0 1 3 4 2 5 8 6 7))))
+(device 42 NOTE
+(properties
+(text2 10 " Gauss Noise Generator" "" " Central Limit Theorem :"
+"    X = X1+X2+...+X12" "" "    Xi = (-.5, +.5) ; Mi = 0 ; Si =1/12"
+" random variables with uniform distribution"
+"    M = N*Mi = 0               => mean value     (valeur moyenne)"
+"    S = N*Si = 12*(1/12) = 1   => standard deviation (\351cart type)" "")))
+(configuration
+(connect D6:1 D0:0)
+(connect D1:1 D0:1)
+(connect D5:1 D2:1)
+(connect D4:1 D2:2)
+(connect D0:1 D4:1)
+(connect D6:0 D4:2)
+(connect D6:0 D5:0)
+(connect D3:0 D6:0)
+(connect D4:1 D7:1)
+(connect D7:2 D8:1)
+(connect D7:1 D8:2)
+(connect D7:1 D9:1)
+(connect D7:2 D9:2)
+(connect D10:1 D9:3)
+(connect D4:1 D10:1)))
+(contextCarrier
+(wndOrigin 2 2)
+(wndState res)
+(active detail)
+(detail
+(extent 1137 720)
+(anchorPt -115 14)
+(configuration
+(devCarrierFor 17
+(active icon)
+(icon
+(extent 64 15))
+(terminals on)
+(pinCenter 290 260))
+(devCarrierFor 18
+(active icon)
+(icon
+(extent 112 15))
+(open
+(extent 148 29)
+(showFormat real))
+(pinCenter 180 260))
+(devCarrierFor 20
+(active open)
+(icon
+(extent 68 0)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\display.icn"))
+(open
+(extent 318 279)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "n(t)")
+(domainName "t")
+(Yspacing 1)
+(Xspacing 2)
+(pen 9)
+(show 1)
+(range -3 3 4 linear))
+(domain 0.1 1.1 4 linear)
+(trace 0 onScale 0
+(name "n(t)")
+(pen 4)
+(lineType 1)
+(pointType 0)))
+(pinCenter 630 190))
+(devCarrierFor 21
+(active open)
+(icon)
+(open
+(extent 47 22))
+(title off)
+(pinCenter 190 20))
+(devCarrierFor 22
+(active icon)
+(icon
+(extent 53 25))
+(open
+(extent 96 54))
+(terminals on)
+(pinCenter 370 270))
+(devCarrierFor 23
+(active icon)
+(icon
+(extent 71 25))
+(open
+(extent 148 33))
+(terminals on)
+(pinCenter 380 120))
+(devCarrierFor 24
+(active icon)
+(icon
+(extent 68 51)
+(iconImage "loop.icn"))
+(open
+(extent 99 79))
+(pinCenter 190 120))
+(devCarrierFor 30
+(active icon)
+(icon
+(extent 80 26))
+(terminals on)
+(pinCenter 530 460))
+(devCarrierFor 32
+(active open)
+(icon
+(extent 68 0)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\display.icn"))
+(open
+(extent 318 279)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "x")
+(domainName "p(x)")
+(Yspacing 1)
+(Xspacing 2)
+(pen 9)
+(show 1)
+(range -3 3 4 linear))
+(domain 0 0.06000000000000001 4 linear)
+(trace 0 onScale 0
+(name "")
+(pen 4)
+(lineType 1)
+(pointType 0)))
+(pinCenter 990 190))
+(devCarrierFor 39
+(active open)
+(icon
+(extent 68 0)
+(iconImage "D:\\Program Files\\Hewlett-Packard\\VEE 5.0\\bitmaps\\display.icn"))
+(open
+(extent 454 273)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "p(x)")
+(domainName "x")
+(Yspacing 1)
+(Xspacing 2)
+(pen 9)
+(show 1)
+(range 0 0.04500000000000001 4 linear))
+(domain -3 3 4 linear)
+(trace 0 onScale 0
+(name "experimental")
+(pen 4)
+(lineType 1)
+(pointType 0))
+(trace 1 onScale 0
+(name "theoretic (Gauss)")
+(pen 7)
+(lineType 1)
+(pointType 0)))
+(pinCenter 920 510))
+(devCarrierFor 40
+(active icon)
+(icon
+(extent 80 25))
+(terminals on)
+(pinCenter 530 600))
+(devCarrierFor 42
+(active icon)
+(icon
+(extent 68 51)
+(iconImage "notepad.icn"))
+(open
+(extent 492 178)
+(editing enabled))
+(pinCenter 240 380))
+(connect D6:1 D0:0
+(points 3 226 120 290 120 290 250))
+(connect D1:1 D0:1
+(points 2 238 260 255 260))
+(connect D5:1 D2:1
+(points 2 418 120 468 120))
+(connect D4:1 D2:2
+(points 4 399 270 420 270 420 260 468 260))
+(connect D0:1 D4:1
+(points 2 324 260 341 260))
+(connect D6:0 D4:2
+(points 5 190 148 190 170 330 170 330 280 341 280))
+(connect D6:0 D5:0
+(points 6 190 148 190 170 250 170 250 90 380 90 380 105))
+(connect D3:0 D6:0
+(points 2 190 33 190 92))
+(connect D4:1 D7:1
+(points 4 399 270 420 270 420 460 487 460))
+(connect D7:2 D8:1
+(points 6 572 470 700 470 700 340 810 340 810 120 828 120))
+(connect D7:1 D8:2
+(points 6 572 450 590 450 590 350 820 350 820 260 828 260))
+(connect D7:1 D9:1
+(points 4 572 450 590 450 590 420 690 420))
+(connect D7:2 D9:2
+(points 4 572 470 660 470 660 510 690 510))
+(connect D10:1 D9:3
+(points 2 572 600 690 600))
+(connect D4:1 D10:1
+(points 4 399 270 420 270 420 600 487 600)))
+(stackingOrder 3 0 5 8 2 7 10 9 4 1 6 11))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))
