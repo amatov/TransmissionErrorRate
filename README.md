@@ -1,4 +1,4 @@
-###  I wrote new code in HP VEE, building on existing code by Alexandru Popovici, PhD, and also wrote code in Matlab for the publication:
+###  The new code I wrote in HP VEE, building on existing code by Alexandru Popovici, PhD, and also the code I wrote in Matlab for the publication:
 
 ###  Alexandre Matov. A Planning Tool for High Bit Rate Transmission over Power Line Communication Channel, IEEE ISPLC (2001)
 
