@@ -4,4 +4,4 @@
 
 ####  **HP VEE** code.
 
-###  Matov, A. "A Planning Tool for High Bit Rate Transmission over Power Line Communication Channel", IEEE ISPLC, 2001.
+###  Alexandre Matov. A Planning Tool for High Bit Rate Transmission over Power Line Communication Channel, IEEE ISPLC (2001)
