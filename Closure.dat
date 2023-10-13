@@ -1,0 +1,852 @@
+(Real
+ (name "Real")
+ (data 2.2E-08)
+)
+(Real
+ (name "Real")
+ (data 0.2910887344226279)
+)
+(Real
+ (name "Real")
+ (data 0.05297007788317482)
+)
+(Real
+ (name "Real")
+ (data 2.21E-08)
+)
+(Real
+ (name "Real")
+ (data 0.3459848931973786)
+)
+(Real
+ (name "Real")
+ (data 0.05542756566144661)
+)
+(Real
+ (name "Real")
+ (data 2.22E-08)
+)
+(Real
+ (name "Real")
+ (data 0.4069954952626376)
+)
+(Real
+ (name "Real")
+ (data 0.05630743288526895)
+)
+(Real
+ (name "Real")
+ (data 2.23E-08)
+)
+(Real
+ (name "Real")
+ (data 0.4842594671527569)
+)
+(Real
+ (name "Real")
+ (data 0.05731713582238933)
+)
+(Real
+ (name "Real")
+ (data 2.24E-08)
+)
+(Real
+ (name "Real")
+ (data 0.5674494216072083)
+)
+(Real
+ (name "Real")
+ (data 0.06227937313521604)
+)
+(Real
+ (name "Real")
+ (data 2.25E-08)
+)
+(Real
+ (name "Real")
+ (data 0.6646030375215578)
+)
+(Real
+ (name "Real")
+ (data 0.1681120245882178)
+)
+(Real
+ (name "Real")
+ (data 2.26E-08)
+)
+(Real
+ (name "Real")
+ (data 0.8869476533727848)
+)
+(Real
+ (name "Real")
+ (data 0.6457049324813499)
+)
+(Real
+ (name "Real")
+ (data 2.27E-08)
+)
+(Real
+ (name "Real")
+ (data 1.042865252364645)
+)
+(Real
+ (name "Real")
+ (data 0.7707952863903389)
+)
+(Real
+ (name "Real")
+ (data 2.280000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.6182092431337852)
+)
+(Real
+ (name "Real")
+ (data 0.5316099986835832)
+)
+(Real
+ (name "Real")
+ (data 2.290000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1355954174246928)
+)
+(Real
+ (name "Real")
+ (data 0.3989415198666172)
+)
+(Real
+ (name "Real")
+ (data 2.300000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02865423161872662)
+)
+(Real
+ (name "Real")
+ (data 0.3265293789710657)
+)
+(Real
+ (name "Real")
+ (data 2.310000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02618709543551583)
+)
+(Real
+ (name "Real")
+ (data 0.2663032112909853)
+)
+(Real
+ (name "Real")
+ (data 2.320000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02514403034687732)
+)
+(Real
+ (name "Real")
+ (data 0.2105893394861366)
+)
+(Real
+ (name "Real")
+ (data 2.330000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02431705409072185)
+)
+(Real
+ (name "Real")
+ (data 0.1612895911356671)
+)
+(Real
+ (name "Real")
+ (data 2.340000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02452423593394785)
+)
+(Real
+ (name "Real")
+ (data 0.1213309844226285)
+)
+(Real
+ (name "Real")
+ (data 2.350000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02469662697565903)
+)
+(Real
+ (name "Real")
+ (data 0.08941928783804931)
+)
+(Real
+ (name "Real")
+ (data 2.360000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02502971548852541)
+)
+(Real
+ (name "Real")
+ (data 0.06388638992417427)
+)
+(Real
+ (name "Real")
+ (data 2.370000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02579719418143205)
+)
+(Real
+ (name "Real")
+ (data 0.05083997576731174)
+)
+(Real
+ (name "Real")
+ (data 2.380000000000001E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02694823572756352)
+)
+(Real
+ (name "Real")
+ (data 0.05145767253361915)
+)
+(Real
+ (name "Real")
+ (data 2.390000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02757622369757295)
+)
+(Real
+ (name "Real")
+ (data 0.05920033344249606)
+)
+(Real
+ (name "Real")
+ (data 2.400000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02809658475771792)
+)
+(Real
+ (name "Real")
+ (data 0.06828975427315377)
+)
+(Real
+ (name "Real")
+ (data 2.410000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.02899757385378469)
+)
+(Real
+ (name "Real")
+ (data 0.07814280629687802)
+)
+(Real
+ (name "Real")
+ (data 2.420000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.0296482471078748)
+)
+(Real
+ (name "Real")
+ (data 0.08612562882925205)
+)
+(Real
+ (name "Real")
+ (data 2.430000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.03089125578897034)
+)
+(Real
+ (name "Real")
+ (data 0.09128330090854901)
+)
+(Real
+ (name "Real")
+ (data 2.440000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.03376006180706424)
+)
+(Real
+ (name "Real")
+ (data 0.09458329756535636)
+)
+(Real
+ (name "Real")
+ (data 2.450000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.03835924704029996)
+)
+(Real
+ (name "Real")
+ (data 0.0977473255119639)
+)
+(Real
+ (name "Real")
+ (data 2.460000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.04418557105817205)
+)
+(Real
+ (name "Real")
+ (data 0.09943202204214818)
+)
+(Real
+ (name "Real")
+ (data 2.470000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.05225409836065574)
+)
+(Real
+ (name "Real")
+ (data 0.1020976406734603)
+)
+(Real
+ (name "Real")
+ (data 2.480000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.06472559840920449)
+)
+(Real
+ (name "Real")
+ (data 0.1064202493238765)
+)
+(Real
+ (name "Real")
+ (data 2.490000000000002E-08)
+)
+(Real
+ (name "Real")
+ (data 0.07921967893191546)
+)
+(Real
+ (name "Real")
+ (data 0.1120079171474897)
+)
+(Real
+ (name "Real")
+ (data 2.500000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.09913695451812508)
+)
+(Real
+ (name "Real")
+ (data 0.1204252840850191)
+)
+(Real
+ (name "Real")
+ (data 2.510000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1246350837397125)
+)
+(Real
+ (name "Real")
+ (data 0.1289463108051356)
+)
+(Real
+ (name "Real")
+ (data 2.520000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1558025910632208)
+)
+(Real
+ (name "Real")
+ (data 0.1490792634765672)
+)
+(Real
+ (name "Real")
+ (data 2.530000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1961947952016673)
+)
+(Real
+ (name "Real")
+ (data 0.1735548238728678)
+)
+(Real
+ (name "Real")
+ (data 2.540000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.2445791766380681)
+)
+(Real
+ (name "Real")
+ (data 0.2052083424191106)
+)
+(Real
+ (name "Real")
+ (data 2.550000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.3067116761281395)
+)
+(Real
+ (name "Real")
+ (data 0.2522018164065375)
+)
+(Real
+ (name "Real")
+ (data 2.560000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.3762515248463645)
+)
+(Real
+ (name "Real")
+ (data 0.3066683126986485)
+)
+(Real
+ (name "Real")
+ (data 2.570000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.4760433481496556)
+)
+(Real
+ (name "Real")
+ (data 0.3718322594968617)
+)
+(Real
+ (name "Real")
+ (data 2.580000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.6227020421297975)
+)
+(Real
+ (name "Real")
+ (data 0.4793067350742258)
+)
+(Real
+ (name "Real")
+ (data 2.590000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 0.8182406380007438)
+)
+(Real
+ (name "Real")
+ (data 0.609584649570948)
+)
+(Real
+ (name "Real")
+ (data 2.600000000000003E-08)
+)
+(Real
+ (name "Real")
+ (data 1.406377921044986)
+)
+(Real
+ (name "Real")
+ (data 1.082821882863165)
+)
+(Real
+ (name "Real")
+ (data 2.610000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 1.185069311881506)
+)
+(Real
+ (name "Real")
+ (data 1.402567507148544)
+)
+(Real
+ (name "Real")
+ (data 2.620000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.7431617846567189)
+)
+(Real
+ (name "Real")
+ (data 0.9540589844699928)
+)
+(Real
+ (name "Real")
+ (data 2.630000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.6730379488086524)
+)
+(Real
+ (name "Real")
+ (data 0.9288310019933044)
+)
+(Real
+ (name "Real")
+ (data 2.640000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.5083669800596454)
+)
+(Real
+ (name "Real")
+ (data 0.725569919119978)
+)
+(Real
+ (name "Real")
+ (data 2.650000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.3862669044743254)
+)
+(Real
+ (name "Real")
+ (data 0.5447132805289538)
+)
+(Real
+ (name "Real")
+ (data 2.660000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.2890527128065811)
+)
+(Real
+ (name "Real")
+ (data 0.414674925255117)
+)
+(Real
+ (name "Real")
+ (data 2.670000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.2165155463318621)
+)
+(Real
+ (name "Real")
+ (data 0.3153534287772454)
+)
+(Real
+ (name "Real")
+ (data 2.680000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1578524274041715)
+)
+(Real
+ (name "Real")
+ (data 0.2299550959063553)
+)
+(Real
+ (name "Real")
+ (data 2.690000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1086160393531321)
+)
+(Real
+ (name "Real")
+ (data 0.165237255725618)
+)
+(Real
+ (name "Real")
+ (data 2.700000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.076488020195699)
+)
+(Real
+ (name "Real")
+ (data 0.1149564522645734)
+)
+(Real
+ (name "Real")
+ (data 2.710000000000004E-08)
+)
+(Real
+ (name "Real")
+ (data 0.05298049591856058)
+)
+(Real
+ (name "Real")
+ (data 0.07584884828193643)
+)
+(Real
+ (name "Real")
+ (data 2.720000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.04246419869850832)
+)
+(Real
+ (name "Real")
+ (data 0.05420373587737605)
+)
+(Real
+ (name "Real")
+ (data 2.730000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.04425253079603536)
+)
+(Real
+ (name "Real")
+ (data 0.05185867215033357)
+)
+(Real
+ (name "Real")
+ (data 2.740000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.05092215553617912)
+)
+(Real
+ (name "Real")
+ (data 0.05548863614666403)
+)
+(Real
+ (name "Real")
+ (data 2.750000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.05888502960001747)
+)
+(Real
+ (name "Real")
+ (data 0.0698036131681849)
+)
+(Real
+ (name "Real")
+ (data 2.760000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.06563544245886387)
+)
+(Real
+ (name "Real")
+ (data 0.07800889647263207)
+)
+(Real
+ (name "Real")
+ (data 2.770000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.07090910760022399)
+)
+(Real
+ (name "Real")
+ (data 0.08625398952853947)
+)
+(Real
+ (name "Real")
+ (data 2.780000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.07445887974596584)
+)
+(Real
+ (name "Real")
+ (data 0.09038608918675479)
+)
+(Real
+ (name "Real")
+ (data 2.790000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.07668701765273127)
+)
+(Real
+ (name "Real")
+ (data 0.09424423008478057)
+)
+(Real
+ (name "Real")
+ (data 2.800000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.07888512941451745)
+)
+(Real
+ (name "Real")
+ (data 0.09354666896545354)
+)
+(Real
+ (name "Real")
+ (data 2.810000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.08042050834786943)
+)
+(Real
+ (name "Real")
+ (data 0.09191564914029404)
+)
+(Real
+ (name "Real")
+ (data 2.820000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.08224200457423016)
+)
+(Real
+ (name "Real")
+ (data 0.08646621766764806)
+)
+(Real
+ (name "Real")
+ (data 2.830000000000005E-08)
+)
+(Real
+ (name "Real")
+ (data 0.08511998966441651)
+)
+(Real
+ (name "Real")
+ (data 0.08218662187913828)
+)
+(Real
+ (name "Real")
+ (data 2.840000000000006E-08)
+)
+(Real
+ (name "Real")
+ (data 0.09026524066295269)
+)
+(Real
+ (name "Real")
+ (data 0.07829647504327994)
+)
+(Real
+ (name "Real")
+ (data 2.850000000000006E-08)
+)
+(Real
+ (name "Real")
+ (data 0.09894972370071532)
+)
+(Real
+ (name "Real")
+ (data 0.07305420890260027)
+)
+(Real
+ (name "Real")
+ (data 2.860000000000006E-08)
+)
+(Real
+ (name "Real")
+ (data 0.111556225336899)
+)
+(Real
+ (name "Real")
+ (data 0.06678090890876941)
+)
+(Real
+ (name "Real")
+ (data 2.870000000000006E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1273982218062705)
+)
+(Real
+ (name "Real")
+ (data 0.06203252079200531)
+)
+(Real
+ (name "Real")
+ (data 2.880000000000006E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1491848193624156)
+)
+(Real
+ (name "Real")
+ (data 0.06106519301736199)
+)
+(Real
+ (name "Real")
+ (data 2.890000000000006E-08)
+)
+(Real
+ (name "Real")
+ (data 0.1769872540405139)
+)
+(Real
+ (name "Real")
+ (data 0.05835951716016859)
+)
+(Real
+ (name "Real")
+ (data 2.900000000000006E-08)
+)
+(Real
+ (name "Real")
+ (data 0.2113886687742288)
+)
+(Real
+ (name "Real")
+ (data 0.05757110252982625)
+)
