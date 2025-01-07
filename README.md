@@ -1,4 +1,4 @@
-###  The HP VEE code I wrote, building on code by Alexandru Popovici, PhD, and the Matlab code I wrote for the publication:
+###  The HP VEE code I wrote during my work on the exploitation of the ubiquitous electrical power-line network as a means for high-speed data communications, as the existing power-line infrastructure is growing in importance as a commercially viable, low-cost option, building on code by Alexandru Popovici, PhD, and the Matlab code I wrote for the publication:
 
 ####  Alexandre Matov "A Planning Tool for High Bit Rate Transmission over Power Line Communication Channel (2001)"
 
